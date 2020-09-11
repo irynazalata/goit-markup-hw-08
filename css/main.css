@@ -808,6 +808,10 @@ header {
   padding-top: 0;
 }
 
+.activity .container {
+  display: block;
+}
+
 .activity .list {
   flex-wrap: wrap;
   margin: -15px;
@@ -834,6 +838,12 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
 }
 
 .team {

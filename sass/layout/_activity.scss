@@ -1,5 +1,8 @@
 .activity {
   padding-top: 0;
+  .container {
+    display: block;
+  }
   .list {
     flex-wrap: wrap;
     margin: -15px;
@@ -24,5 +27,11 @@
         background-color: rgba(47, 48, 58, 0.8);
       }
     }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
   }
 }
