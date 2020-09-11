@@ -9,7 +9,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
 }
 
 body {
@@ -77,8 +76,15 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -108,7 +114,13 @@ p {
 
 .list {
   list-style: none;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .social-list-item-link {
@@ -722,14 +734,6 @@ header {
   }
 }
 
-.benefits .list-item {
-  width: 270px;
-}
-
-.benefits .list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .benefits .list-item::before {
   display: block;
   content: "";
@@ -770,6 +774,34 @@ header {
   font-size: 14px;
   line-height: 1.72;
   font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .benefits-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits .list {
+    margin: -15px;
+  }
+  .benefits .list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .benefits .list-item {
+    width: 270px;
+  }
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .activity {

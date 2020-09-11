@@ -1,19 +1,13 @@
 .benefits .list {
-  &-item {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    &::before {
-      display: block;
-      content: "";
-      height: 120px;
-      margin-bottom: 30px;
-      background-color: #f5f4fa;
-      border-radius: 4px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -43,4 +37,32 @@
 
 .benefits-text {
   @include font(14px, 1.72);
+}
+
+@media screen and (max-width: 767px) {
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .benefits-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits .list {
+    margin: -15px;
+  }
+  .benefits .list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .benefits .list-item {
+    width: 270px;
+  }
+  .benefits .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

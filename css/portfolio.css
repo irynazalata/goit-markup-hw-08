@@ -9,7 +9,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
 }
 
 body {
@@ -77,8 +76,15 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -108,7 +114,13 @@ p {
 
 .list {
   list-style: none;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .social-list-item-link {
