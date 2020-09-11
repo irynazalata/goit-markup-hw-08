@@ -362,6 +362,11 @@ p {
   color: #000000;
 }
 
+.footer .logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .page-header .logo {
     margin-right: 88px;
@@ -378,11 +383,6 @@ p {
     line-height: 1.19;
     font-weight: 700;
   }
-}
-
-.footer .logo {
-  margin-bottom: 20px;
-  color: #ffffff;
 }
 
 header {
@@ -644,9 +644,6 @@ header {
 
 .hero {
   max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -656,19 +653,19 @@ header {
 .hero-content {
   text-align: center;
   margin: 0 auto;
-  max-width: 696px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 118px 60px;
+  max-width: 480px;
 }
 
 .hero-title {
-  margin: 0 auto 30px;
-  font-size: 44px;
-  line-height: 1.36;
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 }
 
 .hero-button {
@@ -690,6 +687,39 @@ header {
 
 .hero-button:focus {
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 696px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .hero-title {
+    margin: 0 auto 30px;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .benefits .list-item {

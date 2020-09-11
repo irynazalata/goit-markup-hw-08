@@ -16,13 +16,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-header & {
+  .page-header .logo {
     margin-right: 88px;
     padding: 26px 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-header & {
+  .page-header .logo {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;

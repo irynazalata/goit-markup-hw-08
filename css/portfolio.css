@@ -169,6 +169,11 @@ header {
   color: #000000;
 }
 
+.footer .logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .page-header .logo {
     margin-right: 88px;
@@ -185,11 +190,6 @@ header {
     line-height: 1.19;
     font-weight: 700;
   }
-}
-
-.footer .logo {
-  margin-bottom: 20px;
-  color: #ffffff;
 }
 
 header {
