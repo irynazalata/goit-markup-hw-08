@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $main-font-family;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+  background-color: $primary-wh-color;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $title-text-color;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

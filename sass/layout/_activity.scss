@@ -1,0 +1,28 @@
+.activity {
+  padding-top: 0;
+  .list {
+    flex-wrap: wrap;
+    margin: -15px;
+    &-item {
+      position: relative;
+      width: 370px;
+      margin: 15px;
+      &-text {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        @include font(14px, 1.14, 700);
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $primary-wh-color;
+        background-color: rgba(47, 48, 58, 0.8);
+      }
+    }
+  }
+}

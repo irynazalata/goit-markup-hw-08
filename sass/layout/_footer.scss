@@ -1,0 +1,112 @@
+/* FOOTER */
+
+.footer {
+  background-color: $secondary-bg-color;
+  .container {
+    display: flex;
+  }
+}
+
+/* CONTACTS SECTION */
+
+.contacts-section {
+  width: 300px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-contacts {
+  color: $primary-wh-color;
+  @include font(14px, 1.71);
+  a {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+/* JOIN SECTION */
+
+.join-section {
+  margin-top: 72px;
+  margin-bottom: 100px;
+  margin-right: 93px;
+}
+.join-text {
+  display: inline-block;
+  margin-bottom: 20px;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
+
+  color: $primary-wh-color;
+}
+
+/* SUBSCRIBE SECTION */
+
+.subscribe-section {
+  margin-top: 72px;
+  margin-bottom: 94px;
+}
+
+.subscribe-text {
+  display: inline-block;
+  margin-bottom: 20px;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
+
+  color: $primary-wh-color;
+}
+
+.subscribe-form-input {
+  width: 358px;
+  margin-right: 8px;
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $primary-wh-color;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    padding-top: 15px;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-button {
+  position: relative;
+  width: 200px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 10px 29px;
+  text-align: left;
+  font-family: inherit;
+  @include font(16px, 1.88, 700);
+  letter-spacing: 0.06em;
+
+  color: $primary-wh-color;
+  background-color: $accent-color;
+
+  border-radius: 4px;
+  border-width: 0;
+  &-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    fill: #ffffff;
+  }
+}

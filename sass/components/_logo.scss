@@ -1,0 +1,25 @@
+.logo {
+  font-family: $logo-font-family;
+  @include font(26px, 1.19, 700);
+  span {
+    color: $accent-color;
+  }
+  .page-header & {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    color: #000000;
+  }
+
+  .page-header & {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    color: #000000;
+  }
+
+  .footer & {
+    margin-bottom: 20px;
+    color: $primary-wh-color;
+  }
+}

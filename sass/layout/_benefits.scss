@@ -1,0 +1,46 @@
+.benefits .list {
+  &-item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.benefit-1::before {
+  background-image: url(../images/benefits/antenna.svg);
+}
+
+.benefit-2::before {
+  background-image: url(../images/benefits/clock.svg);
+}
+
+.benefit-3::before {
+  background-image: url(../images/benefits/diagram.svg);
+}
+
+.benefit-4::before {
+  background-image: url(../images/benefits/astronaut.svg);
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+  @include font(14px, 1.14, 700);
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}
+
+.benefits-text {
+  @include font(14px, 1.72);
+}
