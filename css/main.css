@@ -1,4 +1,4 @@
-header .container, .social-list, .social-list-item-link, .close-btn, .site-nav, .header-contacts a, .clients .list-item-link {
+.social-list, .social-list-item-link, .close-btn, .clients .list-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,7 @@ header .container, .social-list, .social-list-item-link, .close-btn, .site-nav, 
 *::after {
   margin: 0;
   padding: 0;
+  outline: 2px solid red;
 }
 
 body {
@@ -81,9 +82,28 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -328,8 +348,8 @@ p {
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   font-weight: 700;
 }
 
@@ -338,17 +358,26 @@ p {
 }
 
 .page-header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding: 16px 0;
   color: #000000;
 }
 
-.page-header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-  color: #000000;
+@media screen and (min-width: 768px) {
+  .page-header .logo {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+  }
 }
 
 .footer .logo {
@@ -357,7 +386,24 @@ p {
 }
 
 header {
+  max-width: 100%;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: flex;
+  }
+}
+
+.site-nav {
+  margin-right: 84px;
 }
 
 .site-nav .list-item:not(:last-child) {
@@ -367,8 +413,8 @@ header {
 .site-nav .link {
   position: relative;
   display: block;
-  padding-top: 33px;
   padding-bottom: 32px;
+  padding-top: 32px;
   width: max-content;
   font-size: 14px;
   line-height: 1.14;
@@ -397,20 +443,28 @@ header {
   border-radius: 2px;
 }
 
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 305px;
+  }
+  .link {
+    padding-top: 33px;
+  }
 }
 
-.header-contacts a + a {
-  margin-left: 50px;
+.header-contacts {
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .header-contacts a {
-  font-size: 14px;
-  line-height: 1.14;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -423,16 +477,50 @@ header {
 
 .header-contacts-item-svg-1 {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
 }
 
 .header-contacts-item-svg-2 {
+  display: block;
   fill: currentColor;
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header-contacts a + a {
+    margin-left: 30px;
+  }
+  .header-contacts a {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+  }
+  .header-contacts-item-svg-1 {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .header-contacts-item-svg-2 {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 /* FOOTER */
