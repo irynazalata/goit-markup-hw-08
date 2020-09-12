@@ -32,7 +32,6 @@
 }
 
 .footer-contacts {
-  text-align: center;
   color: $primary-wh-color;
   @include font(14px, 1.71);
   .address {
@@ -50,6 +49,11 @@
     &:focus {
       color: $accent-color;
     }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    text-align: center;
   }
 }
 

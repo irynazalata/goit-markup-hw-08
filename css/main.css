@@ -384,9 +384,14 @@ p {
 }
 
 .footer .logo {
-  text-align: center;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -436,7 +441,7 @@ header {
   position: relative;
   display: block;
   padding-bottom: 32px;
-  padding-top: 32px;
+  padding-top: 33px;
   width: max-content;
   font-size: 14px;
   line-height: 1.14;
@@ -471,9 +476,6 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 305px;
-  }
-  .link {
-    padding-top: 33px;
   }
 }
 
@@ -577,7 +579,6 @@ header {
 }
 
 .footer-contacts {
-  text-align: center;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
@@ -601,6 +602,12 @@ header {
 
 .footer-contacts a:hover, .footer-contacts a:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -930,6 +937,7 @@ header {
 }
 
 .team-member {
+  display: block;
   text-align: center;
   padding-bottom: 24px;
   background: #ffffff;

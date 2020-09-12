@@ -1,6 +1,7 @@
 .team {
   background-color: #f5f4fa;
   &-member {
+    display: block;
     text-align: center;
     padding-bottom: 24px;
     background: $primary-wh-color;

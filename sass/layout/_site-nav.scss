@@ -7,7 +7,7 @@
     position: relative;
     display: block;
     padding-bottom: 32px;
-    padding-top: 32px;
+    padding-top: 33px;
     width: max-content;
     @include font(14px, 1.14, 500);
     letter-spacing: 0.02em;
@@ -40,8 +40,5 @@
     justify-content: center;
     align-items: center;
     margin-right: 305px;
-  }
-  .link {
-    padding-top: 33px;
   }
 }
