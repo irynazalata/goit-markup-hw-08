@@ -145,7 +145,7 @@
 .modal-form-input-label,
 .modal-form-message-label {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.17;
 
   letter-spacing: 0.01em;
@@ -157,8 +157,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 9px;
+  line-height: 1.17;
   margin-bottom: 30px;
 
   color: $primary-text-color;
@@ -172,13 +172,24 @@
     content: "";
     width: 16px;
     height: 15px;
-    margin-right: 8px;
-    margin-left: 12px;
+    margin-right: 4px;
+    margin-left: 0px;
     background-image: url(../images/icon.svg), url(../images/icon-check.svg);
     background-size: contain, 0;
     .modal-form-check:checked + & {
       background-size: 0, contain;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-check-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-form-check-label::before {
+    margin-right: 8px;
+    margin-left: 12px;
   }
 }
 
