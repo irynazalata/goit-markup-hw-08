@@ -1,4 +1,4 @@
-.social-list, .social-list-item-link, .filter {
+.social-list, .social-list-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,6 +549,8 @@ header {
 
 /* FILTER */
 .filter {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 34px;
 }
 
@@ -571,19 +573,32 @@ header {
   background-color: #2196f3;
 }
 
+.filter-item {
+  margin-bottom: 15px;
+}
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
-/* EXAMPLES */
-.examples {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter {
+    margin-bottom: 30px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+}
+
+/* EXAMPLES */
 .examples-item {
-  width: 370px;
   margin: 15px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -625,7 +640,7 @@ header {
 .examples-title {
   font-size: 18px;
   line-height: 2;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -635,5 +650,26 @@ header {
   line-height: 2;
   font-weight: 400;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples .list {
+    margin: -15px;
+  }
+  .examples-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .examples-item {
+    width: 370px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
