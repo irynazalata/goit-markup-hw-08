@@ -116,15 +116,16 @@
   padding-left: 16px;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: $primary-wh-color;
+
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ffffff4d;
   border-radius: 4px;
   background-color: transparent;
   &:focus {
     outline: none;
   }
+
   &::placeholder {
-    padding-top: 15px;
     font-size: 16px;
 
     color: rgba(255, 255, 255, 0.6);
