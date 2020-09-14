@@ -28,19 +28,13 @@ header {
     border-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu-close-btn {
-    display: none;
-  }
-  .menu-close-btn:hover,
-  .menu-close-btn:focus {
+  .menu-btn:hover,
+  .menu-btn:focus {
     fill: $accent-color;
   }
 
-  .menu-open-btn {
-    .menu-open-btn:hover,
-    .menu-open-btn:focus {
-      fill: $accent-color;
-    }
+  .menu-close-btn {
+    display: none;
   }
 
   .menu-btn.is-open .menu-open-btn {
@@ -60,11 +54,8 @@ header {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 140px;
-    padding-right: 140px;
     margin-top: 60px;
     background-color: #ffffff;
-    // border-top: 1px solid #ececec;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

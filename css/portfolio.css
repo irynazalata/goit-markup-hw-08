@@ -255,16 +255,12 @@ header {
     border-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .menu-btn:hover,
+  .menu-btn:focus {
+    fill: #2196f3;
+  }
   .menu-close-btn {
     display: none;
-  }
-  .menu-close-btn:hover,
-  .menu-close-btn:focus {
-    fill: #2196f3;
-  }
-  .menu-open-btn .menu-open-btn:hover,
-  .menu-open-btn .menu-open-btn:focus {
-    fill: #2196f3;
   }
   .menu-btn.is-open .menu-open-btn {
     display: none;
@@ -282,8 +278,6 @@ header {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 140px;
-    padding-right: 140px;
     margin-top: 60px;
     background-color: #ffffff;
     opacity: 0;
@@ -305,14 +299,21 @@ header {
   }
 }
 
+.site-nav {
+  margin-bottom: 60px;
+}
+
 .site-nav .list-item {
   text-align: center;
+}
+
+.site-nav .list-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .site-nav .link {
   position: relative;
   display: inline-block;
-  margin-bottom: 40px;
   width: max-content;
   font-size: 18px;
   line-height: 1.17;
@@ -373,8 +374,6 @@ header {
 }
 
 .header-contacts {
-  padding-top: 21px;
-  display: inline-block;
   text-align: center;
 }
 
