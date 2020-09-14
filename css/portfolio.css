@@ -299,16 +299,8 @@ header {
   }
 }
 
-.site-nav {
-  margin-bottom: 60px;
-}
-
 .site-nav .list-item {
   text-align: center;
-}
-
-.site-nav .list-item:not(:last-child) {
-  margin-bottom: 40px;
 }
 
 .site-nav .link {
@@ -343,6 +335,15 @@ header {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 60px;
+  }
+  .site-nav .list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     margin-right: 84px;
@@ -374,6 +375,7 @@ header {
 }
 
 .header-contacts {
+  display: inline-block;
   text-align: center;
 }
 

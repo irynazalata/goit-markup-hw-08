@@ -1,10 +1,6 @@
 .site-nav {
-  margin-bottom: 60px;
   & .list-item {
     text-align: center;
-    &:not(:last-child) {
-      margin-bottom: 40px;
-    }
   }
   .link {
     position: relative;
@@ -33,6 +29,15 @@
       background-color: $accent-color;
       border-radius: 2px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 60px;
+  }
+  .site-nav .list-item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
